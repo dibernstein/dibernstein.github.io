@@ -1,0 +1,12 @@
+Some of their notation:
+-"Circulation" just means line integral of a closed curve over a vector field
+-They write upside-down triangle x F to mean curl(F)
+
+6.2.1: 1,5,9,11
+6.3.6: 1,9,11,(16 if you have time and want a challenge)
+(6.4.4: 1,3,5,7,9) - skip these if you feel comfortable parameterizing surfaces
+6.5.5: 1,3,5,9,11,17,21
+7.3.3: 13,15
+7.4.1: 1,7,9,11
+7.5.1: 7,9,11
+7.6.1: 1,3,5,7
