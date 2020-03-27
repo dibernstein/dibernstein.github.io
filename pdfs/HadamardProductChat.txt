@@ -1,0 +1,56 @@
+09:59:27	 From Daniel Irving Bernstein : Hi All, this is the chat
+09:59:28	 From James Cruickshank : I consent
+09:59:35	 From Walter Whiteley : I consent
+09:59:38	 From Jordán Tibor : ok
+09:59:42	 From Tony Nixon : I consent
+09:59:43	 From Cashous Bortner : I consent
+09:59:44	 From Lefteris Kastis : ok!
+09:59:46	 From tboege : Alright with me
+09:59:49	 From Jane Coons : I consent to having the video of this made publicly available
+09:59:52	 From Bryan Andrews : I consent
+09:59:54	 From Dániel Garamvölgyi : I consent
+10:00:02	 From goran : ok
+10:00:02	 From Alessandro Oneto : I consent
+10:00:04	 From mgallet : I consent to having the video of this made publicly available 
+10:00:06	 From Sean Dewar : I consent
+10:00:09	 From Jessica Sidman : I consent
+10:00:13	 From John Hewetson : I consent
+10:00:26	 From Derek.Kitson : I consent
+10:00:37	 From Enrico Carlini : I consent
+10:06:05	 From Ragnar Freij-Hollanti : I'm afraid I fail to see how the second picture on Slide 2 is non-rigid? It has more than one embedding respecting the length, but the set of those is discrete. Or am I being stupid?
+10:06:34	 From Ragnar Freij-Hollanti : no, one slide back
+10:07:45	 From Kisun : Actually he pointed out slide 2
+10:08:20	 From Jane Coons : I have a fairly basic question: how can we see that this is really a generic property of a graph, as opposed to having full-dimensional subsets of the space of edge lengths where the graph is non-rigid?
+10:09:13	 From Jane Coons : thanks!
+10:09:19	 From Ragnar Freij-Hollanti : thanks
+10:15:16	 From Jane Coons : Yes! Thank you
+10:17:08	 From alex heaton : Will the configurations corresponding to the finitely many points in a fibre (as you were talking about to answer Jane's question) always be images of some finite subgroup of the orthogonal group?
+10:17:37	 From alex heaton : Im just thinking reflections
+10:18:04	 From Zvi : Some distances will change between points in the fiber, no?
+10:30:08	 From alex heaton : y_u - i y_u .  should it be x_u - i y_u ?
+10:30:44	 From alex heaton : thanks!
+10:36:49	 From alex heaton : how do you compute it?
+10:41:29	 From alex heaton : okay thanks!
+10:43:10	 From Kisun : When we have a matroid underlying linear space L how can we understand that bergman fan in terms of ultrametric?
+10:46:27	 From Benjamin Hollering : What happens if we take the Hadamard product of two distinct toric varieties instead of the same one?
+10:46:28	 From Kisun : Maybe a silly question, but can we use induction to prove the conjecture?
+10:47:05	 From alex heaton : What is the list of varieties you already know that can be expressed as a hadamard product?
+10:47:11	 From Kisun : Thanks
+10:48:50	 From Walter Whiteley : Does the matroid underlying the lifting theorems (Sugihara-Whiteley) or the parallel drawing matroids - rank d|V|-(d+1) fit into this scheme?  d=2 this is Laman’s Theorem.
+10:50:15	 From Walter Whiteley : Reference: A matroid on hyper graphs with applications to Science Anlaysis and Rigidity Theory
+10:50:45	 From Walter Whiteley : How about the matroids for multivariate splines?
+10:51:39	 From Zvi : Will the slides be available somewhere?
+10:51:50	 From alex heaton : You may have missed one more question: "How about the matroids for multivariate splines?"
+10:52:30	 From Ragnar Freij-Hollanti  To  Daniel Irving Bernstein(privately) : I consent. Thanks for the talk.
+10:53:34	 From Walter Whiteley : The matroid for bivariate C^1_2 splines is CONJECTURED to be the maximal matroid for 3|V|-6
+10:54:08	 From Benjamin Hollering : Thanks!
+10:56:03	 From alex heaton : Where to read about what you were just talking about with Jacobians etc.
+10:56:04	 From alex heaton : ?
+10:56:58	 From Daniel Irving Bernstein : Computing algebraic matroids by Zvi Roen
+10:57:00	 From Daniel Irving Bernstein : *rosen
+10:57:09	 From meera sitharam : Not originating in a variety  may be  an issue with the parallel drawing/scene  matroids as well? Don't know..
+10:57:10	 From Zvi : Caution: some computations are quite off!
+10:58:00	 From Zvi : (but the theory is generally right)
+10:58:13	 From Walter Whiteley : For d=2 liftings and splines coincide with rigidity
+10:58:49	 From meera sitharam : infinitesimal generic bar-joint rigidity
+10:59:26	 From alex heaton : Thank you!
