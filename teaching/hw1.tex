@@ -1,0 +1,132 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,array,delarray,amsthm,amssymb,epsfig}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+
+
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\aut}{Aut}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7110 -- Homework  1 --  Due:  September 1, 2021}
+\end{center}
+
+\normalsize
+
+
+
+\medskip
+
+\noindent {\bf Practice Problems:}
+
+\begin{pr}
+    Show that an element in $S_n$ has order two if and only if it is a product of commuting cycles.
+\end{pr}
+
+\begin{pr}
+    Show that $\gl_n(F)$ is non-abelian if $n \ge 2$.
+\end{pr}
+
+\begin{pr}
+    Show that the following group is isomorphic to the dihedral group $D_4$
+    \[
+        \langle x,y | x^2=y^2=(xy)^2=1 \rangle.
+    \]
+\end{pr}
+
+\begin{pr}
+Make an appointment to visit me 
+in my office sometime before 5 PM on Thursday, September 2.  I will pass around
+a signup sheet for meetings on Monday, August 23rd.
+
+Be prepared
+to answer the following questions:
+\begin{enumerate}
+\item  Why are you taking this class and what do you hope to get out of it?
+\item  What other math classes have you taken?
+\item  What are your career goals after you graduate?
+\end{enumerate}
+\end{pr}
+
+\bigskip
+
+Type solutions to the following problems in \LaTeX, and email the tex and PDF files to me by 10am on the indicated date.
+Please title them as [lastname].tex and [lastname].pdf.
+When preparing your solutions, you must follow the rules as laid out in the course syllabus.
+
+\vspace{.5cm}
+
+\noindent {\bf Graded Problems:} 
+
+
+\begin{pr}
+    Answer the following questions:
+    \begin{enumerate}
+        \item If $\phi: G\rightarrow H$ is an isomorphism, prove that $|\phi(x)| = |x|$ for all $x \in G$.
+        \item Is the result true if $\phi$ is just a homomorphism? Prove or give a counterexample.
+        \item Given $x \in S_n$, show that $|x|$ is the least common multiple of the lengths of the cycles in its cycle decomposition.
+        \item Are $S_4$ and $D_{24}$ isomorphic? Why or why not?
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+    Let $G$ be a group and let $\aut(G)$ be the set of all isomorphisms from $G$ onto $G$.
+    \begin{enumerate}
+        \item Prove that $\aut(G)$ is a group under function composition.
+        \item Let $G$ be a finite group and let $\sigma \in \aut(G)$ be such that $\sigma(g) = g$ if and only if $g = 1$. If $\sigma^2$ is the identity map, prove that $G$ is abelian.
+    \end{enumerate}
+\end{pr}
+
+
+
+
+
+
+
+
+\end{document}
