@@ -1,0 +1,120 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+
+
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\aut}{Aut}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7110 -- Homework  2 --  Due:  September 22, 2021}
+\end{center}
+
+\normalsize
+
+
+
+\medskip
+
+\noindent {\bf Practice Problems:}
+
+\begin{pr}
+    Section 3.2, questions 14 and 15 (recall that if $G$ acts on $S$ and $s \in S$, then the \emph{stabilizer} of $i$ is the subgroup $H$ of $G$ such that $hs = s$ for all $h \in H$).
+\end{pr}
+
+\begin{pr}
+    Section 3.2, questions 16 and 22.
+\end{pr}
+
+\bigskip
+
+Type solutions to the following problems in \LaTeX, and email the tex and PDF files to me at \url{dbernstein1@tulane.edu} by 10am on the indicated date.
+Please title them as [lastname].tex and [lastname].pdf.
+When preparing your solutions, you must follow the rules as laid out in the course syllabus.
+
+\vspace{.5cm}
+
+\noindent {\bf Graded Problems:} 
+
+\begin{pr}
+The center of a group $G$ is the set $Z(G) = \{ z \in G : gz = zg \mbox{ for all } g \in G\}$.
+\begin{enumerate}
+\item  Show that $Z(G)$ is a normal subgroup of $G$.
+\item  Show that $Z(G) = G$ if and only if $G$ is abelian.
+\item  Determine the center of the dihedral group $D_n$ for all $n$.
+\item  Show that $G/Z(G)$ is a cyclic group if and only if $G$ is abelian.
+\end{enumerate}
+\end{pr}
+
+\begin{pr}
+    In this problem, you will prove the fundamental group theory result known as \emph{Lagrange's theorem}:
+    if $H$ is a subgroup of $G$ and $G$ is finite, then $|H|$ divides $|G|$.
+    \begin{enumerate}
+        \item Let $H$ be a group acting on a set $A$. Let $\sim$ be the relation on $A$ given by
+            \[
+                a \sim b \qquad \textnormal{if and only if} \qquad a = hb \qquad \textnormal{for some } h \in H.
+            \]
+            Prove that $\sim$ is an equivalence relation.
+            The equivalence class of $a \in A$ under $\sim$ is called the \emph{orbit} of $a$ under $H$.
+        \item Now, let $H$ be a subgroup of a finite group $G$ and let $H$ act on $G$ by left multiplication.
+            Let $\mathcal{O}$ be the orbit of some $x \in G$.
+            Prove that the map
+            \[
+                H\rightarrow \mathcal{O} \qquad \textnormal{given by} \qquad h \mapsto hx
+            \]
+            is a bijection. Now prove that $|H|$ divides $|G|$ and that $H$ has $\frac{|G|}{|H|}$ left cosets in $G$.
+    \end{enumerate}
+\end{pr}
+
+
+
+
+
+
+\end{document}
