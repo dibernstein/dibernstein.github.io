@@ -1,0 +1,138 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+
+
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\aut}{Aut}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7110 -- Homework  3 --  Due:  September 29, 2021}
+\end{center}
+
+\normalsize
+
+
+\medskip
+
+\noindent {\bf Practice Problems:}
+
+\begin{defn*}
+    Let $H$ and $K$ be subgroups of a group and define
+    \[
+        HK = \{hk: h \in H, k \in K\}.
+    \]
+\end{defn*}
+
+The following problem walks you through the results that are proved at the end of Section~3.2 in the Dummit and Foote. Feel free to consult the text.
+
+\begin{pr}
+    Let $H$ and $K$ be subgroups of a group $G$.
+    \begin{enumerate}
+        \item Is $HK$ always a subgroup of $G$? Prove or give a counterexample (spoiler alert: answer is below).
+        \item Assume $H$ and $K$ are finite and prove the following
+        \[
+            |HK| = \frac{|H||K|}{|H\cap K|}.
+        \]
+        \item Prove that $HK$ is a subgroup of $G$ if and only if $HK = KH$.
+        \item Does $HK = KH$ mean that every element of $H$ commutes with every element of $K$? (Hint: find subgroups $H$ and $K$ of $D_8$ such that $D_8 = HK$).
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+     Read the statement and proofs of the second and third isomorphism theorems in Dummit and Foote.
+\end{pr}
+
+\bigskip
+
+Type solutions to the following problems in \LaTeX, and email the tex and PDF files to me at \url{dbernstein1@tulane.edu} by 10am on the due date.
+Please title them as [lastname].tex and [lastname].pdf.
+When preparing your solutions, you must follow the rules as laid out in the course syllabus.
+
+\vspace{.5cm}
+
+\noindent {\bf Graded Problems:} 
+
+
+\begin{pr}
+    In this problem, you will prove the Jordan-H\"older Theorem.
+    Let $G$ be a finite nontrivial group.
+    \begin{enumerate}
+        \item Prove that $G$ has a composition series.
+        \item Assume that $G$ has two composition series
+        \[
+            1 = N_0 \trianglelefteq \dots \trianglelefteq N_r = G \qquad {\rm and} \qquad 1 = M_0 \trianglelefteq M_1 \trianglelefteq M_2 = G.
+        \]
+        Show that $r = 2$ and that the list of composition factors is the same (use the second isomorphism theorem).
+        \item Prove the following by induction on $\min\{r,s\}$: If
+                \[
+            1 = N_0 \trianglelefteq \dots \trianglelefteq N_r = G \qquad {\rm and} \qquad 1 = M_0 \trianglelefteq \dots \trianglelefteq M_s = G
+        \]
+        are composition series for $G$, then $r = s$ and there is some permutation $\pi$ of $\{1,\dots,r\}$ such that
+        \[
+            M_{\pi(i)} / M_{\pi(i-1)} \cong N_{i} / N_{i-1} \qquad {\rm for} \qquad 1 \le i \le r
+        \]
+        (hint: apply the induction hypothesis to $H := N_{r-1} \cap M_{s-1}$).
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+    Solve the following problems.
+    \begin{enumerate}
+        \item Find all finite groups with exactly two conjugacy classes.
+        \item Let $n$ be odd.
+        Show that the set of $n$-cycles consists of two equally-sized conjugacy classes of $A_n$.
+    \end{enumerate}
+\end{pr}
+
+
+
+
+\end{document}
