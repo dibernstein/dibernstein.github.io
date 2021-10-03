@@ -1,0 +1,108 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+
+
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\aut}{Aut}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7110 -- Homework  4 --  Due:  Oct 8, 2021}
+\end{center}
+
+\normalsize
+
+
+\medskip
+
+\noindent {\bf Practice Problems:}
+
+\begin{pr}
+    Dummit and Foote Section 4.5 problems 4, 19, 26, 30.
+\end{pr}
+
+\bigskip
+
+Type solutions to the following problems in \LaTeX, and email the tex and PDF files to me at \url{dbernstein1@tulane.edu} by 10am on the due date.
+Please title them as [lastname].tex and [lastname].pdf.
+When preparing your solutions, you must follow the rules as laid out in the course syllabus.
+
+\vspace{.5cm}
+
+\noindent {\bf Graded Problems:}
+
+\begin{pr}
+    Solve the two following problems:
+    \begin{enumerate}
+        \item Use Sylow's Theorem to prove \emph{Cauchy's theorem}, which says that whenever $G$ is a group whose order is divisible by a prime $p$, then $G$ contains a subgroup of order $p$.
+        \item Now, use Cauchy's theorem to prove that any \emph{abelian} group of order $pq$, with $p$ and $q$ prime, is cyclic.
+    \end{enumerate}
+\end{pr}
+
+Given a field $\mathbb{F}$, recall that ${\rm GL}_n(\mathbb{F})$ is the group (under matrix multiplication) of $n\times n$ nonsingular matrices with entries in $\mathbb{F}$ and that $\mathbb{F}^{*}$ denotes the group, under multiplication, consisting of all nonzero elements of $\mathbb{F}$ (i.e.~$\mathbb{F}^{*} = {\rm GL}_1(\mathbb{F})$).
+Recall that the map $\det: {\rm GL}_n(\mathbb{F}) \rightarrow \mathbb{F}^*$ sending a matrix to its determinant is a group homomorphism.
+
+\begin{pr}
+    Let $\phi: S_n \rightarrow {\rm GL}_n(\mathbb{Q})$ be the map sending a permutation $\sigma$ to the $n\times n$ matrix $\phi(\sigma)$ that has $1$ at the $(i,\sigma(i))$ entry for $1 = 1,\dots,n$, and $0$ otherwise.
+    \begin{enumerate}
+        \item Prove that $\phi$ is an injective group homomorphism. Matrices of the form $\phi(\sigma)$ are called \emph{permutation matrices}.
+        \item Prove that every permutation matrix has determinant $\pm 1$.
+        \item Given $\sigma \in S_n$, prove that $\det(\phi(\sigma)) = 1$ if and only if $\sigma \in A_n$.
+    \end{enumerate}
+\end{pr}
+
+
+
+
+
+\end{document}
