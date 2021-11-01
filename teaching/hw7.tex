@@ -1,0 +1,120 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+
+
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\aut}{Aut}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7110 -- Homework  7 --  Due:  November 8, 2021}
+\end{center}
+
+\normalsize
+
+
+\medskip
+
+\noindent {\bf Practice Problems:}
+\begin{pr}
+    Dummit and Foote, section 7.4: 8, 9
+\end{pr}
+
+\noindent {\bf Test practice:}
+
+
+% \begin{pr}
+%     Let $R$ be the ring of all functions $[0,1]\rightarrow \mathbb{R}$ and let $S$ be the ring of all \emph{continuous} functions $[0,1]\rightarrow \mathbb{R}$.
+%     \begin{enumerate}
+%         \item Is $\{f \in R: f\left( \frac{1}{2} \right) = 0 \}$ an ideal of $R$? Is it a principal ideal?
+%         \item Is $\{f \in S: f\left( \frac{1}{2} \right) = 0 \}$ an ideal of $S$? Is it a principal ideal?
+%     \end{enumerate}
+% \end{pr}
+
+\bigskip
+
+Type solutions to the following problems in \LaTeX, and email the tex and PDF files to me at \url{dbernstein1@tulane.edu} by 10am on the due date.
+Please title them as [lastname].tex and [lastname].pdf.
+When preparing your solutions, you must follow the rules as laid out in the course syllabus.
+
+\vspace{.5cm}
+
+\noindent {\bf Graded Problems:}
+
+\begin{pr}
+    Assume $R$ is commutative and let $I \subseteq R$ be an ideal.
+    Define
+    \[
+        {\rm rad}(I) = \{r \in R : r^n \in I {\rm \ for \ some \ } n \ge 0\}. 
+    \]
+    An ideal is said to be \emph{radical} if $I = {\rm rad}(I)$.
+    \begin{enumerate}
+        \item Prove that ${\rm rad}(I)$ is an ideal of $R$
+        \item Prove that prime ideals are radical
+        \item Under what conditions on $n$ is $(n)\subseteq \mathbb{Z}$ a radical ideal?
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+    A \emph{local ring} is a commutative ring with a unique maximal ideal.
+    Let $R$ be a local ring with maximal ideal $M$.
+    \begin{enumerate}
+        \item Prove that every $f \in R \setminus M$ is a unit
+        \item Prove that if $R$ is commutative and has a $1$, then if the set $M$ of non-units forms an ideal,
+        then $R$ is local with maximal ideal $M$
+        \item Let $R$ be the ring of rational numbers with odd denominator. Prove that $R$ is local with maximal ideal $(2)$.
+    \end{enumerate}
+\end{pr}
+
+
+\end{document}
