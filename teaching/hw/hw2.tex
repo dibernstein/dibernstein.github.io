@@ -1,0 +1,123 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+
+
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\aut}{Aut}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7120 -- Homework  2 --  Due:  February 9, 2022}
+\end{center}
+
+\normalsize
+
+\medskip
+
+\noindent {\bf Practice problems:}
+
+\begin{pr}
+    Dummit and Foote 10.2 problems 4 and 6.
+\end{pr}
+
+\begin{pr}
+    Read the proof of the universal theorem for free modules (Theorem 6 in section 10.3).
+\end{pr}
+
+\noindent {\bf Test prep:}
+
+\begin{pr}
+    Dummit and Foote 10.2 problems 3 and 5.
+\end{pr}
+
+
+\bigskip
+
+Type solutions to the following problems in \LaTeX, and email the tex and PDF files to me at \url{dbernstein1@tulane.edu} by 10am on the indicated date.
+Please title them as [lastname].tex and [lastname].pdf.
+When preparing your solutions, you must follow the rules as laid out in the course syllabus.
+
+\vspace{.5cm}
+
+\noindent {\bf Graded Problems:}
+
+
+\begin{pr}
+    An $R$-module $M$ is a \emph{torsion} module if for all $m\in M$ there exists a nonzero $r \in R$ such that $rm = 0$.
+    \begin{enumerate}
+        \item Prove that every finite abelian group is a torsion $\mathbb{Z}$-module.
+        \item If $G$ is an infinite abelian group, is it necessarily true that $G$ is \emph{not} a torsion $\mathbb{Z}$-module?
+        \item Let $R$ be an integral domain. Prove that if $M$ is a torsion $R$-module, then $M$ has a nonzero annihilator (see previous HW for definition of annihilator).
+        \item Give an example of a ring $R$ and a torsion $R$-module $M$ such that the annihilator of $M$ is the zero ideal of $R$.
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+    An $R$-module is \emph{irreducible} if $M \neq 0$ and if $0$ and $M$ are the only submodules.
+    \begin{enumerate}
+        \item Show that $M$ is irreducible if and only if $M \neq 0$ and $M$ is a cyclic module with any nonzero element as a generator.
+        \item Prove the following fundamental result of representation theory, often known as \emph{Schur's lemma}, which says that if $M_1$ and $M_2$ are irreducible $R$-modules, then any nonzero $R$-module homomorphism $M_1\rightarrow M_2$ is an isomorphism.
+        \item Show that if $M$ is irreducible, then ${\rm Hom}_R(M,M)$ is a division ring.
+        \item Assume $R$ is commutative. Show that an $R$-module $M$ is irreducible if and only if $M$ is isomorphic (as an $R$-module) to $R/I$ where $I$ is a maximal ideal of $R$.
+        \item Determine all irreducible $\mathbb{Z}$-modules.
+    \end{enumerate}
+\end{pr}
+
+
+
+
+
+
+
+
+
+\end{document}
