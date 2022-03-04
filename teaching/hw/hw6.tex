@@ -1,0 +1,143 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}[thm]{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7120 -- Homework  6 --  Due:  March 11, 2022}
+\end{center}
+
+\normalsize
+
+\medskip
+
+
+The punchline of this worksheet is that the exterior algebra of a vector space is, in a certain sense, an algebra of linear subspaces. {\bf This homework will not be graded.}
+
+% \begin{defn}
+%     Let $\mathbb{K}$ be a field and let $R,S$ be $\mathbb{K}$-algebras.
+%     A \emph{$\mathbb{K}$-algebra homomorphism} is a ring homomorphism $\phi: R\rightarrow S$
+%     such that $\phi$ is linear as a map of $\mathbb{K}$-vector spaces.
+% \end{defn}
+
+\begin{pr}
+    Let $\mathbb{K}$ be a field and let
+    $V,W$ be finite dimensional $\mathbb{K}$-vector spaces.
+    Let $T: V \rightarrow W$ be a linear transformation.
+    Suppose that $\{e_i\}$ and $\{f_j\}$ are bases of $V$ and $W$
+    and let $A$ denote the matrix of $T$ map with respect to these bases.
+    Let $A_{i_1,\dots,i_M;j_1,\dots,j_M}$ denote the determinant of the $M\times M$ matrix obtained from $A$ by restricting to the rows $i_1,\dots,i_M$ and columns $j_1,\dots,j_M$.
+    Define a linear map
+    \[
+        \bigwedge T : \bigwedge V \rightarrow \bigwedge W
+    \]
+    by extending the following function linearly to all of $\bigwedge V$
+    \[
+        e_{j_1}\wedge \dots \wedge e_{j_M} \mapsto \sum_{i_1 < \dots < i_M} A_{i_1,\dots,i_M;j_1,\dots,j_M} f_{i_1}\wedge \dots \wedge f_{i_M}.
+    \]
+    Verify that $\bigwedge T$ is a $\mathbb{K}$-linear ring homomorphism.
+    Show that if $v_1,\dots,v_M \in V$ are linearly independent and $w_1,\dots,w_M \in {\rm span}\{v_1,\dots,v_M\}$ with $w_i = \sum_{j=1}^M a_{ij}v_j$, then, letting $A$ be the matrix whose $ij$ entry is $a_{ij}$, the following holds
+        \[
+            w_1\wedge\dots\wedge w_M = \det(A) v_1 \wedge \dots \wedge v_M.
+        \]
+        % \item If $T: V\rightarrow V$ is linear and $V$ has dimension $N$, then $\bigwedge T$ maps $\bigwedge^N V$ to itself
+        % and is just multiplication by $\det(T)$.
+        % \item If $T: V \rightarrow W$ is linear, then ${\rm rank}(T) < M$ if and only if $\bigwedge T(\bigwedge^M V) = 0$. In particular, a matrix has rank less than $M$ if and only if all $M\times M$ submatrices have zero determinant.
+\end{pr}
+
+\begin{defn}
+    Let $\omega \in \bigwedge^m V$. Then
+    \begin{enumerate}
+        \item $\omega$ is \emph{completely decomposable} if there exist $v_1,\dots,v_m$ such that $\omega = v_1 \wedge \dots \wedge v_m$, and
+        \item $\omega$ is \emph{partially decomposable} if $\omega = v \wedge \eta$ for some $v \in V$ and $\eta \in \bigwedge^{m-1} V$.
+    \end{enumerate}
+    Note that if $w$ is completely decomposable, it is also partially decomposable.
+\end{defn}
+
+\begin{pr}
+    Let $\omega \in \bigwedge^m V$ and define $\phi_\omega: V\rightarrow \bigwedge^{m+1}V$ by $v\mapsto v\wedge \omega$.
+    Prove the following.
+    \begin{enumerate}
+        \item If $\omega$ is partially decomposable, then $\omega \wedge \omega = 0$.
+        \item $\omega$ is partially decomposable if and only if $\phi_\omega$ has nontrivial kernel.
+        \item If $\{v_1,\dots,v_M\}$ is a basis for the kernel of $\phi_\omega$, then there exists $\eta \in \bigwedge^{m-M} V$ such that
+        \[
+            \omega = v_1 \wedge \dots \wedge v_M \wedge \eta.
+        \]
+        \item $\omega$ is completely decomposable if and only if the kernel of $\phi_\omega$ has dimension $m$.
+    \end{enumerate}
+\end{pr}
+
+\begin{defn}
+    Given elements $u,v$ of an $\mathbb{K}$-vector space $W$, we say that $u,v$ are \emph{protectively equivalent} if there exists a nonzero scalar $\lambda \in \mathbb{K}$ such that $u = \lambda v$.
+\end{defn}
+
+\begin{pr}
+    Let $W$ be a vector space of dimension $N$ and let $M \le N$.
+    For each vector subspace $V$ of $W$ of dimension $M$, define $j(V)$ to be the projective equivalence class of
+    $v_1 \wedge \dots \wedge v_M$ where $v_1,\dots,v_M$ is a basis of $V$.
+    Prove the following:
+    \begin{enumerate}
+        \item $j$ is a well-defined map (i.e.~does not depend on choice of basis),
+        \item $j$ is a bijection between linear subspaces of $W$ of dimension $M$, and projective equivalence classes of completely decomposable elements of $\bigwedge^M W$, and
+        \item if $V_1,V_2$ are subspaces of $W$ such that $V_1\cap V_2 = \{0\}$, then $j(V_1 + V_2) = j(V_1)\wedge j(V_2)$.
+    \end{enumerate}
+\end{pr}
+
+
+
+
+
+
+
+
+\end{document}
