@@ -1,0 +1,131 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+
+
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\aut}{Aut}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7120 -- Homework  1 --  Due:  February 2, 2022}
+\end{center}
+
+\normalsize
+
+
+
+\medskip
+
+\noindent {\bf Practice problems:}
+
+\begin{pr}
+    Dummit and Foote, 10.1 problems 1 and 3.
+\end{pr}
+
+\noindent {\bf Test prep:}
+
+\begin{pr}
+    Let $n \ge 2$ be an integer and let $R$ be the ring of $n\times n$ matrices with entries in $\mathbb{C}$.
+    Let $M_l$ and $M_r$ be the module structures on $R$ defined by left and right multiplication (i.e.~given $r,m \in R$, then multiplying $r$ by $m$ is $rm$ when considering $m$ as an element of $M_l$, and $mr$ when considering $m$ as an element of $M_r$).
+    Let $Z$ be the subset of $R$ consisting of all matrices whose last $n-1$ columns are zero.
+    Determine whether $Z$ is a submodule of $M_l$ and $M_r$.
+\end{pr}
+
+\begin{pr}
+    Determine which of the statements below are true. For those that are false, provide a counterexample:
+    \begin{enumerate}
+        \item if $R$ is a subring of $S$ and $M$ is an $S$-module, then $M$ is an $R$-module
+        \item if $R$ is a subring of $S$ and $M$ is an $R$-module, then $M$ is an $S$-module.
+    \end{enumerate}
+\end{pr}
+
+\bigskip
+
+Type solutions to the following problems in \LaTeX, and email the tex and PDF files to me at \url{dbernstein1@tulane.edu} by 10am on the indicated date.
+Please title them as [lastname].tex and [lastname].pdf.
+When preparing your solutions, you must follow the rules as laid out in the course syllabus.
+
+\vspace{.5cm}
+
+\noindent {\bf Graded Problems:}
+
+\begin{pr}
+    The \emph{annihilator} of an $R$-module $M$ is defined to be
+    \[
+        \{r \in R : rm = 0 \ {\rm for \ all} \ m \in M\}.
+    \]
+    \begin{enumerate}
+        \item Prove that the annihilator of an $R$-module is a two-sided ideal of $R$.
+        \item Let $M$ be a finitely generated abelian group, viewed as a $\mathbb{Z}$ module. What is the annihilator of $M$?
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+    Let $F = \mathbb{R}$ and $V = \mathbb{R}^2$.
+    Recall that each linear transformation $T: V \rightarrow V$ gives rise to an $F[t]$-module.
+    For each of the following values of $T$, determine all $F[t]$-submodules of $V$:
+    \begin{enumerate}
+        \item $T$ is $90^\circ$ clockwise rotation about the origin
+        \item $T$ is orthogonal projection onto the $y$-axis
+        \item $T$ is $180^\circ$ clockwise rotation about the origin.
+    \end{enumerate}
+\end{pr}
+
+
+
+
+
+
+
+
+
+\end{document}

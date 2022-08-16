@@ -1,0 +1,129 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+
+
+\DeclareMathOperator{\gl}{GL}
+\DeclareMathOperator{\aut}{Aut}
+
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7120 -- Homework  7 --  Due:  March 21, 2022}
+\end{center}
+
+\normalsize
+
+\medskip
+
+\noindent {\bf Practice problems:}
+
+\begin{pr}
+    Dummit and Foote, 12.2 problems 3,4,8
+\end{pr}
+
+
+
+
+\noindent {\bf Test prep:}
+
+\begin{pr}
+    Construct examples of each of the following, or briefly explain why it doesn't exist:
+    \begin{enumerate}
+        \item An $R$-module of rank one that is not free, where $R$ is an integral domain
+        \item A nonzero free $F[t]$-module $M$ where $F$ is a field and $M$ is finite-dimensional as an $F$-vector space
+        \item A non-Noetherian ring
+        \item An infinitely-generated submodule of a finitely-generated $R$-module
+    \end{enumerate}
+\end{pr}
+
+
+\begin{pr}
+    Determine all possible rational canonical forms for a linear transformation $T: \mathbb{R}^6\rightarrow \mathbb{R}^6$ with characteristic polynomial $x^2(x^2+1)^2$.
+\end{pr}
+
+\begin{pr}
+    Determine all possible Jordan canonical forms for a linear transformation $T: \mathbb{C}^5\rightarrow \mathbb{C}^5$ with characteristic polynomial $(x-2)^3(x-3)^2$.
+\end{pr}
+
+
+
+
+
+
+\bigskip
+
+Type solutions to the following problems in \LaTeX, and email the tex and PDF files to me at \url{dbernstein1@tulane.edu} by 10am on the indicated date.
+Please title them as [lastname].tex and [lastname].pdf.
+When preparing your solutions, you must follow the rules as laid out in the course syllabus.
+
+\vspace{.5cm}
+
+\noindent {\bf Graded Problems:}
+
+
+Recall that an $R$-module $M$ is \emph{torsion} if for each $x \in M$, there is $r \in R\setminus\{0\}$ such that $rx = 0$. 
+
+\begin{pr}
+    Let $R$ be an integral domain.
+    \begin{enumerate}
+        \item Prove that an $R$-module $M$ has rank $n$ if and only if $M$ contains a free submodule $N$ of rank $n$ such that $M/N$ is torsion.
+        \item Prove that if $A$ and $B$ are $R$-modules with ranks $m$ and $n$, then $A \oplus B$ has rank $m+n$.
+    \end{enumerate}
+\end{pr}
+
+
+
+
+
+
+
+\end{document}
