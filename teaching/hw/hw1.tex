@@ -45,6 +45,9 @@
 \usepackage{color}
 \newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
 
+\newcommand{\conv}{{\rm Conv}}
+\newcommand{\aff}{{\rm Aff}}
+
 
 
 \begin{document}
@@ -66,17 +69,37 @@
     Show that every compact convex set has an extreme point. Give an example of a non-compact convex set with an extreme point.
 \end{pr}
 
+
 \begin{pr}
-    Let $P,Q \subset \mathbb{R}^2$ be two-dimensional polytopes (i.e.~polygons).
-    For each of the following statements, either prove that they are true, or provide a counterexample.
-    \begin{enumerate}
-        \item If $P$ and $Q$ have the same number of edges, then they are affinely isomorphic.
-        \item If $P$ and $Q$ have the same number of edges, then they are combinatorially isomorphic.
-        \item If $P$ and $Q$ are both triangles, then they are affinely isomorphic.
-        \item If $P$ is a square and $Q$ is a parallelogram, then $P$ and $Q$ are affinely isomorphic.
-        Begin by convincing yourself that it makes no difference if you assume that the vertices of $P$ are $\{0,1\}^2$ and that
-        $(0,0)$ is a vertex of $Q$.
-    \end{enumerate}
+    Prove that $x \in \aff(x_1,\dots,x_n)$ if and only if
+    \[
+        \begin{pmatrix}
+            1 \\
+            x
+        \end{pmatrix}
+        \in
+        \mathbb{R}\begin{pmatrix}
+            1 & 1 & \dots & 1 \\
+            x_1 & x_2 & \dots & x_n
+        \end{pmatrix}
+    \]
+    and that $x \in \conv(x_1,\dots,x_n)$ if and only if
+    \[
+        \begin{pmatrix}
+            1 \\
+            x
+        \end{pmatrix}
+        \in
+        \mathbb{R}_{\ge 0} \begin{pmatrix}
+            1 & 1 & \dots & 1 \\
+            x_1 & x_2 & \dots & x_n
+        \end{pmatrix}
+    \]
+\end{pr}
+\begin{pr}
+    Let $X,Y \subseteq \mathbb{R}^d$ with $|X| = |Y| = d+1$.
+    Assume $X,Y$ are each affinely independent sets.
+    Prove that $\conv(X)$ and $\conv(Y)$ are affinely isomorphic.
 \end{pr}
 
 
@@ -89,7 +112,20 @@ When preparing your solutions, you must follow the rules as laid out in the cour
 
 \vspace{.5cm}
 
-\noindent {\bf Graded Problems:}
+\noindent {\bf Problems to write up:}
+
+\begin{pr}
+    Let $P,Q \subset \mathbb{R}^2$ be two-dimensional polytopes (i.e.~polygons).
+    For each of the following statements, either prove that they are true, or provide a counterexample.
+    \begin{enumerate}
+        \item If $P$ and $Q$ have the same number of edges, then they are affinely isomorphic.
+        \item If $P$ and $Q$ have the same number of edges, then they are combinatorially isomorphic.
+        \item If $P$ and $Q$ are both triangles, then they are affinely isomorphic.
+        \item If $P$ is a square and $Q$ is a parallelogram, then $P$ and $Q$ are affinely isomorphic.
+        Begin by convincing yourself that it makes no difference if you assume that the vertices of $P$ are $\{0,1\}^2$ and that
+        $(0,0)$ is a vertex of $Q$.
+    \end{enumerate}
+\end{pr}
 
 
 
