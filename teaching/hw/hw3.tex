@@ -1,0 +1,119 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+\newcommand{\conv}{{\rm Conv}}
+\newcommand{\aff}{{\rm Aff}}
+\newcommand{\rb}{{\rm rb}}
+\newcommand{\ri}{{\rm relint}}
+\newcommand{\rank}{{\rm rank}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7760 -- Homework  3 --  Due:  September 14, 2022}
+\end{center}
+
+\normalsize
+
+
+\bigskip
+
+\noindent {\bf Practice Problems:}
+
+\bigskip
+
+\begin{pr}
+    Show that the standard cube and the standard cross polytope are polar duals of each other.
+\end{pr}
+
+\begin{pr}
+    Prove directly that the polar dual of a standard simplex is a simplex.
+\end{pr}
+
+\bigskip
+
+\noindent {\bf Problems to write up:}
+
+\bigskip
+
+\begin{pr}
+    Prove each of the following statements. 
+    \begin{enumerate}
+        \item The intersection of two polytopes is a polytope.
+        \item The sum of two polytopes is a polytope.
+        \item Every face of a polytope is exposed.
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+    Given $x,y \in \mathbb{R}^d$, we use the shorthand $x \ge y$ to mean that $x_i \ge y_i$ for all $i$.
+    Use the hyperplane separation theorem to prove (one of many versions of) the \emph{Farkas Lemma}:
+    \begin{lemma}
+        Let $A \in \mathbb{R}^{m\times d}$ and let $z \in \mathbb{R}^m$.
+        Then there exists a point $x \in \mathbb{R}^d$ with $Ax = 0$ and $x \ge 0$,
+        or there exists a row vector $c \in (\mathbb{R}^m)^*$ with $cA \ge 0$ and $cz < 0$,
+        but not both.
+    \end{lemma}
+    There are two other versions of the Farkas lemma in Ziegler's book (the one above also appears as version 2).
+    Convince yourself that they are indeed equivalent to the one above (no need to write anything up for it).
+\end{pr}
+
+\begin{pr}
+    Show that every polytope is affinely isomorphic to a bounded intersection of an orthant with an affine space.
+\end{pr}
+
+
+
+
+
+
+
+\end{document}
