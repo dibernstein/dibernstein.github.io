@@ -1,0 +1,111 @@
+\documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url,tikz}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+\tikzstyle{vertex}=[circle, draw, inner sep=0pt, minimum size=6pt, fill]
+\newcommand{\vertex}{\node[vertex]}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+\newcommand{\conv}{{\rm Conv}}
+\newcommand{\aff}{{\rm Aff}}
+\newcommand{\rb}{{\rm rb}}
+\newcommand{\ri}{{\rm relint}}
+\newcommand{\rank}{{\rm rank}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7760 -- Homework  4 --  Due:  October 3, 2022}
+\end{center}
+
+\normalsize
+
+
+\bigskip
+
+\noindent {\bf Practice Problems:}
+
+\bigskip
+
+\begin{pr}
+    Let $r,n$ be nonnegative integers with $r \le n$.
+    Let $E$ be an $n$-element set and define $\mathcal{B}$ to be the set of all $r$-element subsets of $E$.
+    \begin{enumerate}
+        \item Convince yourself that $\mathcal{B}$ is the set of bases of a matroid $U_{r,n}$.
+        Matroids of this form are called \emph{uniform matroids}.
+        \item Determine what the independent sets, circuits, rank function, closure operator, and spanning sets of this matroid are.
+    \end{enumerate}
+\end{pr}
+
+\begin{pr}
+    Oxley, section 1.1 problems 1 and 4.
+\end{pr}
+
+\bigskip
+
+\noindent {\bf Problems to write up:}
+\bigskip
+
+\begin{pr}
+    Prove that $U_{2,n}$ is representable over a field with $q$ elements if and only if $q > n-1$.
+    Does there exist a graphic matroid that is not representable over $\mathbb{F}_2$? Prove your answer.
+\end{pr}
+
+\begin{pr}
+    Let $M$ be a binary matroid, i.e.~a matroid representable over the field with two elements.
+    Prove that given any distinct circuits $C_1,C_2$, their symmetric difference $C_1 \Delta C_2$ contains a circuit.
+\end{pr}
+
+\bigskip
+
+
+
+
+
+\end{document}
