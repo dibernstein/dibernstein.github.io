@@ -1,0 +1,116 @@
+\documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url,tikz}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+\tikzstyle{vertex}=[circle, draw, inner sep=0pt, minimum size=6pt, fill]
+\newcommand{\vertex}{\node[vertex]}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+\newcommand{\conv}{{\rm Conv}}
+\newcommand{\aff}{{\rm Aff}}
+\newcommand{\rb}{{\rm rb}}
+\newcommand{\ri}{{\rm relint}}
+\newcommand{\rank}{{\rm rank}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7760 -- Homework  5 --  Due:  October 10, 2022}
+\end{center}
+
+\normalsize
+
+
+\bigskip
+
+\noindent {\bf Practice Problems:}
+
+\bigskip
+
+\begin{pr}
+    Let $G$ be a graph. Describe the closure operator of $\mathcal{G}$ in graph-theoretic terms.
+\end{pr}
+
+\begin{pr}
+    Oxley section 1.4 problem 6.
+\end{pr}
+
+\bigskip
+
+\noindent {\bf Problems to write up:}
+\bigskip
+
+\begin{pr}
+    Prove that a graph with $n$ vertices, $c$ connected components, and at least $n - c + 1$ edges has a cycle.
+    Then let $G$ be a graph with edge set $E$ and show that the rank function of its matroid $\mathcal{M}(G)$
+    has the following rank function
+    \[
+        \rho(S) = |V(S)| - c(S)
+    \]
+    where $V(S)$ denotes the set of vertices of $G$ that are incident to some edge in $S$ and $c(S)$ denotes the number of connected components of the graph on vertex set $V(S)$ and edge set $S$.
+\end{pr}
+
+\begin{pr}
+    Let $E$ be a finite set and let $\mathcal{H} \subseteq 2^E$.
+    Prove that $\mathcal{H}$ is the set of hyperplanes of a matroid if and only if
+    \begin{enumerate}
+        \item $E \notin \mathcal{H}$,
+        \item if $H_1,H_2 \in \mathcal{H}$ with $H_1 \subseteq H_2$, then $H_1 = H_2$, and
+        \item if $H_1,H_2 \in \mathcal{H}$ and $e \notin H_1 \cup H_2$, then there exists $H \in \mathcal{H}$
+        such that $H \supseteq (H_1 \cap H_2) \cup e$.
+    \end{enumerate}
+\end{pr}
+
+\bigskip
+
+
+
+
+
+\end{document}
