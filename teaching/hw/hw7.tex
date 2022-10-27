@@ -1,0 +1,109 @@
+\documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url,tikz}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+\tikzstyle{vertex}=[circle, draw, inner sep=0pt, minimum size=6pt, fill]
+\newcommand{\vertex}{\node[vertex]}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+\newcommand{\conv}{{\rm Conv}}
+\newcommand{\aff}{{\rm Aff}}
+\newcommand{\rb}{{\rm rb}}
+\newcommand{\ri}{{\rm relint}}
+\newcommand{\rank}{{\rm rank}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7760 -- Homework  7 --  Due:  November 4, 2022}
+\end{center}
+
+\normalsize
+
+
+\bigskip
+
+\noindent {\bf Practice Problems:}
+
+\bigskip
+
+\begin{pr}
+    Describe the rank function, closure operator, and lattice of flats of $M / e$.
+\end{pr}
+
+\bigskip
+
+\noindent {\bf Problems to write up:}
+\bigskip
+
+\begin{pr}
+    Prove that $\mathcal{M}(K_{3,3})^*$ is not graphic.
+\end{pr}
+
+\begin{pr}
+    Prove directly, without using matroid duality, that $M/e$ is representable over a field $\mathbb{F}$
+    whenever $M$ is [hint: obtain a representation of $M/e$ from a representation of $M$ by projecting all columns not corresponding to $e$ onto the hyperplane orthogonal to $e$].
+\end{pr}
+
+\begin{pr}
+    Let $G$ be a directed graph with vertex set $V$ and directed edge set $E$
+    and let $U(G)$ be the undirected graph obtained from $G$ by dropping edge orientations.
+    For each cycle $C$ of $U(G)$ let $C^+$ and $C^-$ denote the elements of $\{+,-,0\}^E$ obtained as follows.
+    Set $C^+_e=C^-_e= 0$ for each $e \in E\setminus C$.
+    Choose a cyclic ordering of the vertices $v_1,\dots,v_k$ of $C$.
+    For each $e \in C$, set $C^+_e=+$ if $e$ is directed from $v_i$ to $v_{i+1}$ and $-$ otherwise.
+    Prove that this collection of sign vectors is the set of signed circuits of an oriented matroid.
+    What are the signed vectors?
+\end{pr}
+
+
+
+
+
+\end{document}
