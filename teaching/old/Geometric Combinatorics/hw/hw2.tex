@@ -1,0 +1,132 @@
+ \documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+\newcommand{\conv}{{\rm Conv}}
+\newcommand{\aff}{{\rm Aff}}
+\newcommand{\rb}{{\rm rb}}
+\newcommand{\ri}{{\rm relint}}
+\newcommand{\rank}{{\rm rank}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7760 -- Homework  2 --  Due:  September 7, 2022}
+\end{center}
+
+\normalsize
+
+
+\bigskip
+
+\noindent {\bf Practice Problems:}
+
+\bigskip
+
+\begin{pr}
+    Prove that $\dim(\conv\{v_1,\dots,v_n\}) = \rank(\hat{V}) - 1$ where
+    \[
+        \hat{V} = \begin{pmatrix}
+            1 & 1 & \dots & 1 \\
+            v_1 & v_2 & \dots & v_n
+        \end{pmatrix}
+    \]
+\end{pr}
+
+\begin{pr}\label{convexNearest}
+    Recall from analysis that if $S \subseteq \mathbb{R}^n$ is compact, then each continuous function $f: S \rightarrow R$
+    has a maximum and a minimum on $S$.
+    Now let $C\subseteq \mathbb{R}^d$ be closed and convex and let $x \in \mathbb{R}^d \setminus C$.
+    Prove that there exists a unique point $y \in C$ minimizing the Euclidean distance to $x$.
+    [Hint: begin by reducing to the case that $C$ is compact.]
+\end{pr}
+
+\bigskip
+
+\noindent {\bf Problems to write up:}
+
+\bigskip
+
+\begin{pr}
+    Prove the hyperplane separation theorem (see below for the theorem statement and a proof outline).
+\end{pr}
+
+\begin{thm*}[Hyperplane separation theorem]
+    Given a convex $C\subset \mathbb{R}^n$ and a point $y \in \mathbb{R}^d\setminus C$,
+    there exists $a \in (\mathbb{R}^n)^*$ and $b \in \mathbb{R}$ such that $ax \le b$ for all $x \in C$ and $ay \ge b$.
+\end{thm*}
+\noindent {\bf Outline of proof:}\\
+    Split into the cases based on whether or not $y \in \rb(C)$.\\
+    {\bf Case 1:} $y \notin \rb(C)$:
+    \begin{enumerate}
+        \item Prove that there exists a unique $z$ in the closure of $C$ that is nearest
+        to $y$ in the Euclidean distance metric (c.f.~Problem~\ref{convexNearest}).
+        \item Reduce to the case where $z = -y$.
+        \item Show that $y^Tx \le 0$ for all $x \in C$. [Hint: show that if $y^Tx > 0$,
+        then $tx + (1-t)z$ and $y$ are closer to each other than $z$ and $y$ are to each other for small positive $t$.]
+        \item Conclude that the hyperplane separation theorem is true when $y \notin \rb(C)$.
+    \end{enumerate}
+    {\bf Case 2:} $y \in \rb(C)$:
+    \begin{enumerate}
+        \item Reduce to the case that $y = 0$ and note that it is enough to construct a \emph{linear} hyperplane
+        that does not intersect $\ri(C)$.
+        \item Inductively construct a sequence of linear spaces $L_0,\dots,L_{d-1} \subseteq \mathbb{R}^d$ with $\dim L_i = i$,
+        none intersecting $\ri(C)$. [Hint: for $k \le d-2$, note that $L_k^\perp$ has a two-dimensional subspace $P$
+        and that $P \cap (C + L_k)$ is convex.
+        Argue that $P$ contains a line $L$ through the origin that does not intersect $P \cap (\ri(C) + L_k)$, and that this implies $L_k + L$ does not intersect $\ri(C)$.]
+        \item Conclude that the hyperplane separation theorem is true.
+    \end{enumerate}
+
+
+
+
+
+
+\end{document}

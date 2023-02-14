@@ -1,0 +1,119 @@
+\documentclass[letterpaper,11pt]{amsart}
+\textwidth=16.00cm 
+\textheight=22.00cm 
+\topmargin=0.00cm
+\oddsidemargin=0.00cm 
+\evensidemargin=0.00cm 
+\headheight=0cm 
+\headsep=0.5cm
+
+\textheight=610pt
+
+\usepackage{latexsym,amsthm,amssymb,epsfig,url,tikz}%eufrak
+%\usepackage[sumlimits]{amsmath}
+
+\tikzstyle{vertex}=[circle, draw, inner sep=0pt, minimum size=6pt, fill]
+\newcommand{\vertex}{\node[vertex]}
+
+% \usepackage[centredisplay,PostScript=dvips]{diagrams}
+%\usepackage[dvips]{color}
+%\usepackage[mathscr]{eucal}mathrsfs
+
+% Theorem Formatting Commands.
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{prop*}{Proposition}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{conj*}{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem*{defn*}{Definition}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{pr}{Problem}
+\newtheorem{alg}[thm]{Algorithm}
+\newtheorem{ques}[thm]{Question}
+
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\newtheorem*{obs}{Observation}
+
+\usepackage{color}
+\newcommand{\dbfeedback}[1]{{\color{red} DB Feedback: #1}}
+
+\newcommand{\conv}{{\rm Conv}}
+\newcommand{\aff}{{\rm Aff}}
+\newcommand{\rb}{{\rm rb}}
+\newcommand{\ri}{{\rm relint}}
+\newcommand{\rank}{{\rm rank}}
+
+
+
+\begin{document}
+
+\Large
+
+\begin{center}
+{\bf Math 7760 -- Homework  6 --  Due:  October 21, 2022}
+\end{center}
+
+\normalsize
+
+
+\bigskip
+
+\noindent {\bf Practice Problems:}
+
+\bigskip
+
+\begin{pr}
+    If you are interested in learning about the connection between greedy algorithms and matroids, read Section 1.8 in Oxley.
+\end{pr}
+
+\begin{pr}
+    Use matroid duality to prove the hard direction of the hyperplane axioms.
+\end{pr}
+
+\begin{pr}
+    What is the dual of $U_{r,n}$?
+\end{pr}
+
+\bigskip
+
+\noindent {\bf Problems to write up:}
+\bigskip
+
+\begin{pr}
+    Let $M$ be a matroid with circuit $C$ and cocircuit $C^*$.
+    Prove that $|C \cap C^*| \neq 1$.
+\end{pr}
+
+\begin{pr}
+    Given a matroid $M$ on ground set $E$ and a basis $B$, prove that for each $e \in E\setminus B$,
+    there exists a unique circuit in $B \cup \{e\}$.
+    Use this to prove that for any connected graph $G$ with spanning tree $T$,
+    for each $e \in T$ (this is not a typo), there exists a unique minimal cut of $G$ whose only edge in common with $T$ is $e$.
+\end{pr}
+
+\begin{pr}
+    Let $A \in \mathbb{F}^{r \times n}$ have rank $r$
+    and let $B \in \mathbb{F}^{(n-r) \times n}$ have rank $n-r$ and assume that $AB^T = 0$.
+    Show that there exists a nonzero $\lambda \in \mathbb{F}$ such that for any $S \subseteq E$ of size $r$,
+    if $A_S$ denotes the column-submatrix of $A$ on columns indexed by $S$ and $B_{\{1,\dots,n\}\setminus S}$
+    denotes the column-submatrix of $B$ on columns indexed by $\{1,\dots,n\}\setminus S$,
+    then $\det(A_S) = \lambda \det(B_{\{1,\dots,n\}\setminus S})$.
+\end{pr}
+
+
+
+
+
+
+\end{document}
